@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 5px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  height: auto;
+}
+
+.checkout-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.checkout-form p {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  font-size: larger;
+  color: #cc2d2d;
+}
+
+.name {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 5px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 12px;
+}
+
+
+.form-group label[for="subscribe"] {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background-color: #cc2d2d;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.popup-head {
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 32px;
+  padding-inline: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.close:hover {
+  background-color: tomato;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1024px) {
+  .name {
+    max-width: 786px;
+    gap: 20px;
+  }
+
+  .container {
+    padding: 20px 40px;
+  }
+
+  input[type="submit"] {
+    font-size: 24px;
+  }
+
+}
